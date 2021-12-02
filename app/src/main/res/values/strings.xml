@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">laRestoPartnersOrigin</string>
+    <string name="app_name">laResto Partners</string>
+    <string name="facebook_app_id">737804793596792</string>
+    <string name="app_secret">eb9d778dd5c8c2da7e07003500d9f0c4</string>
+    <string name="google_login_protocol_scheme">862969971879-vdb3deab21825tfo5hiu2s3rdrd4f2aa.apps.googleusercontent.com</string>
+    <string name="google_login_protocol_scheme2_web">862969971879-m03cvck69i5cagnu9mkgktqh3iajlphv.apps.googleusercontent.com</string>
+    <string name="fb_login_protocol_scheme">fb737804793596792</string>
 </resources>
