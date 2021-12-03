@@ -5,4 +5,6 @@
     <string name="google_login_protocol_scheme">862969971879-vdb3deab21825tfo5hiu2s3rdrd4f2aa.apps.googleusercontent.com</string>
     <string name="google_login_protocol_scheme2_web">862969971879-m03cvck69i5cagnu9mkgktqh3iajlphv.apps.googleusercontent.com</string>
     <string name="fb_login_protocol_scheme">fb737804793596792</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
