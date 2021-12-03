@@ -1,5 +1,6 @@
 package com.example.larestopartnersorigin.data.dto
 
+import com.example.larestopartnersorigin.data.vo.EmailUserServer
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
@@ -14,3 +15,9 @@ data class EmailUserServerDto(
     @SerializedName("password")
     val password: String
 )
+fun EmailUserServerDto.toEmailUserServer(): EmailUserServer{
+    return EmailUserServer(email = email, name = name, password = password)
+}
+fun EmailUserServer.toEmailUserServerDto(): EmailUserServerDto{
+    return EmailUserServerDto(email = email, name = name, password = password)
+}

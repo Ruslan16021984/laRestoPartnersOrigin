@@ -1,5 +1,6 @@
 package com.example.larestopartnersorigin.data.dto
 
+import com.example.larestopartnersorigin.data.vo.RegistrationUser
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
@@ -15,5 +16,15 @@ data class RegistrationUserDto(
     var accessToken: String,
     @SerializedName("expired")
     @Expose
-    var expirationDate: String
+    var expirationDate: String,
 )
+
+fun RegistrationUserDto.toRegistrationUser(): RegistrationUser {
+    return RegistrationUser(
+        status = status,
+        username = username,
+        accessToken = accessToken,
+        expirationDate = expirationDate
+    )
+}
+
