@@ -2,5 +2,5 @@ package com.example.larestopartnersorigin.data.vo
 
 data class EmailUserLogin(
     val registrationType: Int,
-    val userData: UserData
+    val userData: UserDataLogin
 )

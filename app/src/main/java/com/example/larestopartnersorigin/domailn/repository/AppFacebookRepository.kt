@@ -1,16 +1,13 @@
 package com.example.larestopartnersorigin.domailn.repository
 
-import com.example.larestopartnersorigin.data.vo.FacebookUsers
+import com.example.larestopartnersorigin.data.dto.FacebookResponse
 import io.reactivex.Single
-import org.json.JSONObject
 
 interface AppFacebookRepository {
     fun getUserToken(
         grantType: String,
         clientId: String,
-        clientSecretKey: String,
-        jsonObject: JSONObject,
-        accessToken: String
-    ): Single<FacebookUsers>
+        clientSecretKey: String
+    ): Single<FacebookResponse>
 
 }

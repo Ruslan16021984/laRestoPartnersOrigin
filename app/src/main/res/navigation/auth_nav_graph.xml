@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/launcherFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/launcherFragment"
@@ -31,8 +31,13 @@
         tools:layout="@layout/fragment_different_sign_up" />
     <fragment
         android:id="@+id/startRegFragment"
-        android:name="com.example.larestopartnersorigin.StartRegFragment"
+        android:name="com.example.larestopartnersorigin.presentations.auth.start_reg.StartRegFragment"
         android:label="fragment_start_reg"
         tools:layout="@layout/fragment_start_reg" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.larestopartnersorigin.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
 
 </navigation>

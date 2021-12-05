@@ -10,10 +10,10 @@ data class EmailUserLoginDto(
     val registrationType: Int,
     @SerializedName("user_data")
     @Expose
-    val userData: UserDataDto,
+    val userData: UserDataLoginDto,
 )
 
 fun EmailUserLogin.toEmailUserLoginDto(): EmailUserLoginDto {
     return EmailUserLoginDto(registrationType = registrationType,
-        UserDataDto(email = userData.email, password = userData.password))
+        UserDataLoginDto(email = userData.email, password = userData.password))
 }

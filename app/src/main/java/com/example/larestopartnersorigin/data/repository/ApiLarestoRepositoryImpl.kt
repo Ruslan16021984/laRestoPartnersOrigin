@@ -2,10 +2,7 @@ package com.example.larestopartnersorigin.data.repository
 
 import com.example.larestopartnersorigin.data.dto.*
 import com.example.larestopartnersorigin.data.network.ApiLaRestoService
-import com.example.larestopartnersorigin.data.vo.EmailUserLogin
-import com.example.larestopartnersorigin.data.vo.FacebookUsers
 import com.example.larestopartnersorigin.data.vo.RegistrationUser
-import com.example.larestopartnersorigin.data.vo.UserData
 import com.example.larestopartnersorigin.domailn.repository.ApiLarestoRepository
 import io.reactivex.Single
 import javax.inject.Inject

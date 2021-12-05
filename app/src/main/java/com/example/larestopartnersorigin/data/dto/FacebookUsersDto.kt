@@ -10,10 +10,17 @@ data class FacebookUsersDto(
     var registrationType: Int,
     @SerializedName("user_data")
     @Expose
-    var userData: UserDataDto,
+    var userData: UserDataWithFacebookDto,
 )
 
 fun FacebookUsers.toFacebookUsersDto(): FacebookUsersDto {
     return FacebookUsersDto(registrationType = registrationType,
-        userData = UserDataDto(userData.email, userData.password))
+        userData = UserDataWithFacebookDto(firstName = userData.firstName,
+            lastName = userData.lastName,
+            accessToken = userData.accessToken,
+            email = userData.email,
+            fullName = userData.fullName,
+        inputToken = userData.inputToken,
+        picture = userData.picture,
+        userId = userData.userId))
 }
